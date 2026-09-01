@@ -28,6 +28,12 @@ const productList = [
     desc: "Heavy‑duty DC contactors with high‑voltage & large‑current switching capability. Designed for battery energy‑storage systems, EV chargers, solar power stations, new‑energy vehicles and industrial power control equipment. Stable performance and long service life.",
     imageUrl:"/images/contactor.jpg",
     slug:"dc-contactors"
+  },
+  {
+    title: "Energy‑Storage Connectors",
+    desc: "High‑current, waterproof and vibration‑resistant energy‑storage connectors, ideal for battery packs, energy‑storage systems and EV‑charging projects.",
+    imageUrl:"/images/connector.png",
+    slug:"energy-storage-connectors"
   }
 ]
 
