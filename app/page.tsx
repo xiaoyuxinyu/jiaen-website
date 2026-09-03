@@ -29,12 +29,10 @@ export default function HomePage() {
                 Clean & Reliable Energy ; Reliable Energy
               </p>
               <h1 className="mt-3 text-3xl font-bold tracking-tight text-white text-balance sm:text-5xl">
-                Powering Industry with Clean & Reliable Energy Solutons
+                Powering Industry with Clean & Reliable Energy Solutions
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300">
-                Shenzhen Jiaen Electromechanical New Energy Co., Ltd delivers full-cycle new energy engineering services,
-                including solar PV systemss, energy storage integration, EV charging infrastructure and
-                electromechanical contracting. 
+                Dongguan Jiaen focuses on cooling fan, thermal‑dissipation components and OEM/ODM custom manufacturing for global industrial customers.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button
@@ -43,8 +41,8 @@ export default function HomePage() {
                   className="bg-accent text-accent-foreground hover:bg-accent/90"
                   render={<Link href="/contact" className="flex items-center gap-2" />}
                 >
-                    Request a Quote
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  Request a Quote
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Button>
                 <Button
                   nativeButton={false}
@@ -60,13 +58,13 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Section 1: Our Strengths */}
+        {/* Section 1: Our Strengths 数据统计板块 */}
         <section className="border-b border-border bg-background">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="mb-10 max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-widest text-accent">Our Strengths</p>
               <h2 className="mt-2 text-2xl font-bold tracking-tight text-primary sm:text-3xl">
-                A trusted partner for global energy projects
+                Trusted Industrial Fan & Thermal Solution Manufacturer
               </h2>
             </div>
             <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-border bg-border lg:grid-cols-4">
@@ -83,44 +81,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Section 2: Core Services */}
-        <section className="bg-secondary/40">
-          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-            <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
-              <div className="max-w-2xl">
-                <p className="text-sm font-semibold uppercase tracking-widest text-accent">Our Core Services</p>
-                <h2 className="mt-2 text-2xl font-bold tracking-tight text-primary sm:text-3xl text-balance">
-                  Full-cycle new energy engineering
-                </h2>
-              </div>
-              <Link
-                href="/services"
-                className="flex items-center gap-1 text-sm font-semibold text-primary hover:text-accent"
-              >
-                View all services
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((service) => (
-                <div
-                  key={service.title}
-                  className="flex flex-col rounded-md border border-border bg-card p-6 transition-colors hover:border-accent"
-                >
-                  <span className="flex h-11 w-11 items-center justify-center rounded-sm bg-primary/5 text-primary">
-                    <ServiceIcon name={service.icon} className="h-5 w-5" />
-                  </span>
-                  <h3 className="mt-4 text-base font-semibold text-primary">{service.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* 👉已经彻底删掉：OUR CORE SERVICES 服务卡片那一大块 */}
 
-        {/* Section 3: Project Cases */}
+        {/* Section 3: Project Cases 项目案例 */}
         <section className="bg-background">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
