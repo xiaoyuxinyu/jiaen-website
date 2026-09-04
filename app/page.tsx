@@ -26,13 +26,13 @@ export default function HomePage() {
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-widest text-accent">
                 Clean & Reliable Energy ; Reliable Energy
-              </p>
+              </p >
               <h1 className="mt-3 text-3xl font-bold tracking-tight text-white text-balance sm:text-5xl">
                 Powering Industry with Clean & Reliable Energy Solutions
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300">
                 Dongguan Jiaen focuses on cooling fan, thermal-dissipation components and OEM/ODM custom manufacturing for global industrial customers.
-              </p>
+              </p >
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button
                   nativeButton={false}
@@ -62,13 +62,13 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
               <div className="max-w-2xl">
-                <p className="text-sm font-semibold uppercase tracking-widest text-accent">Our Portfolio</p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-accent">Our Portfolio</p >
                 <h2 className="mt-2 text-2xl font-bold tracking-tight text-primary sm:text-3xl text-balance">
                   Our Product & Service Projects
                 </h2>
                 <p className="mt-3 text-sm text-muted-foreground">
                   We have delivered hundreds of new‑energy engineering projects across Asia, Southeast Asia and the Middle East, with stable operation and high customer recognition.
-                </p>
+                </p >
               </div>
               <Link
                 href="/projects"
