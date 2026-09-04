@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, ArrowUpRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { QuoteCta } from '@/components/quote-cta'
-import { ServiceIcon } from '@/components/service-icon'
 import { services, projects, stats } from '@/lib/data'
 
 export default function HomePage() {
@@ -32,7 +31,7 @@ export default function HomePage() {
                 Powering Industry with Clean & Reliable Energy Solutions
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300">
-                Dongguan Jiaen focuses on cooling fan, thermal‑dissipation components and OEM/ODM custom manufacturing for global industrial customers.
+                Dongguan Jiaen focuses on cooling fan, thermal-dissipation components and OEM/ODM custom manufacturing for global industrial customers.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button
@@ -58,40 +57,18 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Section 1: Our Strengths 数据统计板块 */}
-        <section className="border-b border-border bg-background">
-          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-            <div className="mb-10 max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-widest text-accent">Our Strengths</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-primary sm:text-3xl">
-                Trusted Industrial Fan & Thermal Solution Manufacturer
-              </h2>
-            </div>
-            <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-border bg-border lg:grid-cols-4">
-              {stats.map((stat) => (
-                <div key={stat.label} className="bg-background px-6 py-8 text-center">
-                  <dt className="sr-only">{stat.label}</dt>
-                  <dd className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-                    {stat.value}
-                  </dd>
-                  <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
-
-        {/* 👉已经彻底删掉：OUR CORE SERVICES 服务卡片那一大块 */}
-
-        {/* Section 3: Project Cases 项目案例 */}
+        {/* 项目案例板块：标题更新为我们产品服务的项目；卡片仅保留图片 */}
         <section className="bg-background">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
               <div className="max-w-2xl">
-                <p className="text-sm font-semibold uppercase tracking-widest text-accent">Project Cases</p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-accent">Our Portfolio</p>
                 <h2 className="mt-2 text-2xl font-bold tracking-tight text-primary sm:text-3xl text-balance">
-                  Delivered worldwide, built to last
+                  Our Product & Service Projects
                 </h2>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  We have delivered hundreds of new‑energy engineering projects across Asia, Southeast Asia and the Middle East, with stable operation and high customer recognition.
+                </p>
               </div>
               <Link
                 href="/projects"
@@ -110,31 +87,21 @@ export default function HomePage() {
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
                       src={project.image || '/placeholder.svg'}
-                      alt={project.title}
+                      alt=""
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-5">
-                    <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-accent">
-                      <span>{project.location}</span>
-                    </div>
-                    <h3 className="mt-2 flex items-center gap-1 text-lg font-semibold text-primary">
-                      {project.title}
-                      <ArrowUpRight className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true" />
-                    </h3>
-                    <p className="mt-1 text-sm font-medium text-muted-foreground">{project.description}</p>
-                  </div>
+                  {/* 删除全部卡片文字，只留图片 */}
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Section 4: Inquiry CTA */}
+        {/* Inquiry CTA */}
         <QuoteCta />
       </main>
-      {/* Section 5: Footer */}
       <SiteFooter />
     </div>
   )
